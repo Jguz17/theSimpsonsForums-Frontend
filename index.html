@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>The Simpsons Forums</title>
+</head>
+<body>
+    <header>
+        <div class="simpson-header">
+            <h1>The Simpsons Forums</h1>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form id="add-simpson-form">
+            <h3>Create A Simpson Thread !</h3>
+
+            <input class="input-text" type="text" name="name" placeholder="Enter a Simpson's name . . .">
+            <input class="input-text" type="text" name="quote" placeholder="Enter a remarkable quote from this Simpson . . .">
+            <input class="input-text" type="text" name="image" placeholder="Enter this Simpson's image . . .">
+            
+            <input id="create-simpson-thread" class="submit" type="submit" name="submit" value="Create">
+        </form>
+    </div>
+
+    <div class="simpsons-form-trigger">
+        <h3>Create A Simpsons Thread</h3>
+        <button id="trigger-simpson-form">Create</button>
+    </div>
+
+    <div id="simpson-collection" class="simpson-collection">
+        <!-- add simpsons post -->
+    </div>
+
+    <main>
+        <div class="post-thread">
+            <!-- add simpsons thread -->
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
