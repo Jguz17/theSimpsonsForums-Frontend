@@ -134,11 +134,11 @@ const handleEditSimpsonCard = (event) => {
     submitNewSimpson( {newSimpsonName, newSimpsonQuote, newSimpsonUrl} )
 }
 
-const submitNewSimpson = (newSimpsonName) => {
-    console.log(newSimpsonName)
-    console.log(newSimpsonName.newSimpsonName);
-    console.log(newSimpsonName.newSimpsonQuote);
-    console.log(newSimpsonName.newSimpsonUrl);
+const submitNewSimpson = ({newSimpsonName, newSimpsonQuote, newSimpsonUrl}) => {
+    // console.log(newSimpsonName)
+    console.log(newSimpsonName);
+    console.log(newSimpsonQuote);
+    console.log(newSimpsonUrl);
 
     // editedSimpsonName = newSimpsonName.newSimpsonName;
     // editedSimpsonQuote = newSimpsonName.newSimpsonQuote;
@@ -153,13 +153,13 @@ const submitNewSimpson = (newSimpsonName) => {
             Accept: 'application/json',
         },
         body: JSON.stringify({
-            name: newSimpsonName.newSimpsonName,
-            quote: newSimpsonName.newSimpsonQuote,
-            image: newSimpsonName.newSimpsonUrl
+            name: newSimpsonName,
+            quote: newSimpsonQuote,
+            image: newSimpsonUrl
         })
     })
     .then((results) => results.json())
-    .then((data) => console.log(data))
+    .then((data) => renderSimpsonToCollection(data))
     .catch((error) => console.log(error))
 }
 
@@ -262,6 +262,8 @@ const renderNewSimpson = (simpson) => {
         <h3>${name}</h3>
         <p>${quote}</p>
         <img src="${image}" class="simpson-image">
+        <button id="edit" class="button-class" data-id=${id}>edit</button>
+        <button id="delete" class="button-class" data-id=${id}>delete</button>
     </div>`;
 }
 
