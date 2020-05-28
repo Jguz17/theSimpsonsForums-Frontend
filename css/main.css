@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.login-stuff {
+    text-align: center;
+}
+
+.everything-else {
+    display: none;
+}
+
 .simpson-header {
     display: flex;
     justify-content: center;
@@ -33,7 +41,18 @@
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #D02D16
-    
+}
+
+.simpson-card-overlay {
+
+}
+
+.simpson-card:hover {
+    background-color: rgba(201, 76, 76);
+}
+
+.button-class {
+
 }
 
 .simpson-image {
@@ -85,4 +104,13 @@
 #trigger-test {
     display: block;
     text-align: center;
+}
+
+.post-thread {
+    width: 100%;
+    text-align: center;
+}
+
+.simpson-thread-image {
+    width: 50%;
 }

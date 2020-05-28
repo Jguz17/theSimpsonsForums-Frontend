@@ -13,32 +13,42 @@
         </div>
     </header>
 
-    <div class="form-container">
-        <form id="add-simpson-form">
-            <h3>Create A Simpson Thread !</h3>
-
-            <input class="input-text" type="text" name="name" placeholder="Enter a Simpson's name . . .">
-            <input class="input-text" type="text" name="quote" placeholder="Enter a remarkable quote from this Simpson . . .">
-            <input class="input-text" type="text" name="image" placeholder="Enter this Simpson's image . . .">
-            
-            <input id="create-simpson-thread" class="submit" type="submit" name="submit" value="Create">
+    <div class="login-stuff">
+        <form id="login-form">
+            <h3>Login/Create username</h3>
+            <input type="text" name="name" placeholder="Enter username . . .">
+            <input id="username-submit-button" type="submit" name="submit" value="submit">
         </form>
     </div>
 
-    <div class="simpson-form-trigger">
-        <h3>Create A Simpsons Thread</h3>
-        <button id="trigger-simpson-form">Create</button>
-    </div>
-
-    <div id="simpson-collection" class="simpson-collection">
-        <!-- add simpsons post -->
-    </div>
-
-    <main>
-        <div id="post-thread" class="post-thread">
-            <!-- add simpsons thread -->
+    <div class="everything-else">
+        <div class="form-container">
+            <form id="add-simpson-form">
+                <h3>Create A Simpson Thread !</h3>
+    
+                <input class="input-text" type="text" name="name" placeholder="Enter a Simpson's name . . .">
+                <input class="input-text" type="text" name="quote" placeholder="Enter a remarkable quote from this Simpson . . .">
+                <input class="input-text" type="text" name="image" placeholder="Enter this Simpson's image . . .">
+                
+                <input id="create-simpson-thread" class="submit" type="submit" name="submit" value="Create">
+            </form>
         </div>
-    </main>
+    
+        <div class="simpson-form-trigger">
+            <h3>Create A Simpsons Thread</h3>
+            <button id="trigger-simpson-form">Create</button>
+        </div>
+    
+        <div id="simpson-collection" class="simpson-collection">
+            <!-- add simpsons post -->
+        </div>
+    
+        <main>
+            <div id="post-thread" class="post-thread">
+                <!-- add simpsons thread -->
+            </div>
+        </main>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
