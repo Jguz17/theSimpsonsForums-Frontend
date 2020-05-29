@@ -43,16 +43,9 @@
     box-shadow: 3px 4px #D02D16
 }
 
-.simpson-card-overlay {
-
-}
 
 .simpson-card:hover {
     background-color: rgba(201, 76, 76);
-}
-
-.button-class {
-
 }
 
 .simpson-image {
@@ -113,4 +106,8 @@
 
 .simpson-thread-image {
     width: 50%;
+}
+
+#edit-simpson-body {
+    display: none;
 }
